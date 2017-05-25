@@ -364,9 +364,10 @@
   }
   var tow_content_id=document.getElementById('tow_content_id');
   var from_div=document.getElementById('from_div');
+  console.log(from_div)
   window.onresize=function  () {
     if(window.innerWidth<=655){
-      var height=from_div.offetHeight;
+      var height=from_div.clientHeight;
       console.log(height)
       // tow_content_id.style.height=window.innerWidth+"px";
       

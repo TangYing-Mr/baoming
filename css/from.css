@@ -159,8 +159,8 @@ footer{
   position: relative;
 }
 .diwei{
-  position: relative;
-  left: 40px;
+  position: absolute;
+  left: 60px;
   top: 6px;
 }
 .tijiao{
@@ -207,7 +207,8 @@ footer{
         width: 100%;
       }
       .diwei{
-        left: 0;
+         position: absolute;
+         left: 13px;
       }
     }
 @media screen and (max-width:380px) {
