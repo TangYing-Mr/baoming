@@ -146,10 +146,10 @@
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label juli">*考生号</label>
                   <div class="col-sm-6"> 
-                    <input type="text" class="form-control juli" id="inputEmail3">
+                    <input type="email" class="form-control juli" id="inputEmail3 juli">
                     </div>
                    <div class="col-sm-3 juli yanzhan1">
-                    <p class="yanzheng yanzheng01">请输入考生号</p>
+                    <p class="yanzheng">请输入考生号</p>
                   </div>
                 </div>
                 <div id="xian"></div>
@@ -159,7 +159,7 @@
                       <input type="text" class="form-control juli" id="inputtext3" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng02">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -181,7 +181,7 @@
                           <select id="select_minzu" class="select_style geli"></select>
                    </div>
                    <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng03" style="top:4px">请选择！</p>
+                        <p class="yanzheng" style="top:4px">请选择！</p>
                    </div>
                   </div>
                   <div id="xian"></div>
@@ -189,16 +189,15 @@
                         <label for="bron_day" class="col-sm-2 control-label juli">*出生日期</label>
                        <div class="col-sm-9">
                               <select id="bron_year" class="select_style geli">
-                                <option value="请选择">请选择</option>
+                                <option value="a">请选择</option>
                               </select>年
                               <select id="bron_month" class="select_style">
-                                 <option value="请选择">请选择</option>
+                                 <option value="b">请选择</option>
                               </select>月
                               <select id="bron_day" class="select_style">
-
-                                 <option value="请选择">请选择</option>
-                              </select>日<span class="yanzheng yanzheng002" style="top:-2px;left:10px;">请选择！</span>
-
+                                 <option value="c">请选择</option>
+                              </select>日<span class="yanzheng" style="top:-2px;left:10px;" id="riqi_id">请选择！</span>
+                       </div>
                   </div>
                  <div id="xian"></div>
                  <div class="form-group">
@@ -207,7 +206,7 @@
                       <input type="text" class="form-control juli" id="zhenzhi" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng003">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -215,19 +214,12 @@
                     <label for="select_leibie" class="col-sm-2 control-label juli">*考生类别</label>
                    <div class="col-sm-5">
                           <select id="select_leibie" class="select_style geli">
-
-                            <option value="请选择">请选择</option>
-
-                            <option value="城市应届">城市应届</option>
-                            <option value="城市往届">城市往届</option>
-                            <option value="农村应届">农村应届</option>
-                            <option value="农村往届">农村往届</option>
-
-                          </select>
-                   </div>
-                   <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng04" style="top:4px">请选择！</p>
-
+                            <option value="d">请选择</option>
+                            <option value="d">城市应届</option>
+                            <option value="d">城市往届</option>
+                            <option value="d">农村应届</option>
+                            <option value="d">农村往届</option>
+                          </select><span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                    </div>
                  </div>
                  <div id="xian"></div>
@@ -237,7 +229,7 @@
                       <input type="text" class="form-control juli" id="ID" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng05">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -247,7 +239,7 @@
                       <input type="text" class="form-control juli" id="xuexiao">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng004">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -255,25 +247,19 @@
                     <label for="select_biye" class="col-sm-2 control-label juli">*毕业时间</label>
                    <div class="col-sm-5">
                           <select id="select_biye" class="select_style geli">
-                            <option value="请选择">请选择</option>
-
-                            <option value="2017">2017</option>
-                            <option value="2016">2016</option>
-                            <option value="2015">2015</option>
-                            <option value="2014">2014</option>
-                            <option value="2013">2013</option>
-                            <option value="2012">2012</option>
-                            <option value="2011">2011</option>
-                            <option value="2010">2010</option>
-
+                            <option value="d">请选择</option>
+                            <option value="d">2017</option>
+                            <option value="d">2016</option>
+                            <option value="d">2015</option>
+                            <option value="d">2014</option>
+                            <option value="d">2013</option>
+                            <option value="d">2012</option>
+                            <option value="d">2011</option>
+                            <option value="d">2010</option>
                           </select>
                           <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                    </div>
-
-                   <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng06" style="top:4px">请选择！</p>
-                   </div>
-
+                  
                  </div>
                  <div id="xian"></div>
                  <div class="form-group">
@@ -282,7 +268,7 @@
                       <input type="text" class="form-control juli" id="jiating">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng07">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                  <div id="xian"></div>
@@ -292,7 +278,7 @@
                       <input type="text" class="form-control juli" id="jiedao">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng08">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -309,7 +295,7 @@
                       <input type="text" class="form-control juli" id="phone">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng yanzheng09">请填写信息！</p>
+                        <p class="yanzheng">请填写信息！</p>
                      </div>
                 </div>
                <div id="xian"></div>
@@ -319,7 +305,7 @@
                     <input type="text" class="form-control juli" id="tongzhishu">
                    </div>
                    <div class="col-sm-3 juli yanzhan1">
-                      <p class="yanzheng yanzheng10">请填写信息！</p>
+                      <p class="yanzheng">请填写信息！</p>
                    </div>
               </div>
              <div id="xian"></div>
@@ -329,7 +315,7 @@
                   <input type="text" class="form-control juli" id="shoujianren">
                  </div>
                  <div class="col-sm-3 juli yanzhan1">
-                    <p class="yanzheng yanzheng11">请填写信息！</p>
+                    <p class="yanzheng">请填写信息！</p>
                  </div>
             </div>
            <div id="xian"></div>
@@ -339,7 +325,7 @@
                 <input type="text" class="form-control juli" id="lianxidainhua">
                </div>
                <div class="col-sm-3 juli yanzhan1">
-                  <p class="yanzheng yanzheng12">请填写信息！</p>
+                  <p class="yanzheng">请填写信息！</p>
                </div>
           </div>
             <div id="xian"></div>
@@ -349,7 +335,7 @@
                 <input type="text" class="form-control juli" id="youbian">
                </div>
                <div class="col-sm-3 juli yanzhan1">
-                  <p class="yanzheng yanzheng13">请填写信息！</p>
+                  <p class="yanzheng">请填写信息！</p>
                </div>
           </div>
            <div id="xian"></div>
@@ -385,31 +371,24 @@
                 <label for="frist_zhiyuan" class="col-sm-2 control-label juli ">*第一志愿专业</label>
                 <div class="col-sm-6">
                      <select id="frist_zhiyuan" class="select_style geli " >
-                       <option value="请选择">请选择</option>
-
-                       <option value="移动应用开发">移动应用开发</option>
-                      <option value="信息安全与管理">信息安全与管理</option>
-                      <option value="广播影视节目制作">广播影视节目制作</option>
-
-
+                       <option value="">请选择</option>
+                       <option value="">移动应用开发</option>
+                      <option value="">信息安全与管理</option>
+                      <option value="">广播影视节目制作</option>
                      </select>
                  <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                </div>
-
-               <div class="col-sm-3 juli yanzhan1">
-                    <p class="yanzheng diwei yanzheng14">请选择！</p>
-               </div>
-
+              
             </div>
           <div id="xian"></div>
           <div class="form-group">
                 <label for="tow_zhiyuan" class="col-sm-2 control-label juli">第二志愿专业</label>
                 <div class="col-sm-2">
                      <select id="tow_zhiyuan" class="select_style geli">
-                       <option value="请选择">请选择</option>
-                       <option value="移动应用开发">移动应用开发</option>
-                      <option value="信息安全与管理">信息安全与管理</option>
-                      <option value="广播影视节目制作">广播影视节目制作</option>
+                       <option value="">请选择</option>
+                       <option value="">移动应用开发</option>
+                      <option value="">信息安全与管理</option>
+                      <option value="">广播影视节目制作</option>
                      </select>
                </div>
             </div>
@@ -418,10 +397,10 @@
                 <label for="tree_zhiyuan" class="col-sm-2 control-label juli">第三志愿专业</label>
                 <div class="col-sm-2">
                      <select id="tree_zhiyuan" class="select_style geli">
-                       <option value="请选择">请选择</option>
-                       <option value="移动应用开发">移动应用开发</option>
-                      <option value="信息安全与管理">信息安全与管理</option>
-                      <option value="广播影视节目制作">广播影视节目制作</option>
+                       <option value="">请选择</option>
+                       <option value="">移动应用开发</option>
+                      <option value="">信息安全与管理</option>
+                      <option value="">广播影视节目制作</option>
                      </select>
                </div>
             </div>
@@ -627,5 +606,4 @@ window.onload=function () {
 
  // 分享到 结束 
 </script>
-<script type="text/javascript" src="../js/yanZheng.js"></script>
 </html>
