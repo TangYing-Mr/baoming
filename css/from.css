@@ -140,10 +140,12 @@
   font-size: 9px;
   position: relative;
   top: 8px;
+  opacity: 0;
 
 }
 .kuang_width{
   width: 400px;
+  resize:none;
 }
 .tijaiohe{
   width: 100%;
