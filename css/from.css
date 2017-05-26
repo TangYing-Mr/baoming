@@ -74,6 +74,7 @@
   background-position: center;
   background-size: 100% 100%;
   background-position: center;
+  position: relative;
 }
 .left{
   float: left;
@@ -210,4 +211,108 @@
         width: 90%;
       }
       
+<<<<<<< HEAD
     }
+=======
+    }
+
+   /* 分享开始*/
+     * {
+          margin: 0;
+          padding: 0;
+         }
+         .share {
+          border: none;
+        position: fixed;
+        top: 10.9%;
+        left: -230px;
+         }
+       .share_box {
+        width: 230px;
+        height: 325px;
+        color: rgb(90,90,90);
+        position: relative;
+        background-color: red;
+       }
+       .share_right {
+            position: absolute;
+            right: -27px;
+            top: 17%;
+            width: 30px;
+            height: 90px;
+            background-color: rgb(70,119,230);
+            text-align: center;
+            cursor: pointer;
+            border-radius: 0 5px 5px 0;
+       }
+       .share_right p {
+          margin-top: 19px;
+        font-size: 17px;
+        color: white;
+       }
+       .share_box .share_top {
+        width: 100%;
+        height: 30px;
+        background-color: rgb(246,246,246);
+        line-height: 30px;
+       }
+    
+        .share_box .share_center {
+          width: 100%;
+          height: 265px;
+          overflow: hidden;
+          background-color: white;
+        }
+        .share_box .share_center .share_platform {
+           width: 100%;
+             height: 100%;
+             margin-left: 18px;
+        }
+        .share_box .share_center .share_platform a {
+          display: inline-block;
+          width: 74px;
+          height: 21px;
+          line-height: 21px;
+          text-indent: 10px;
+        }
+        .share_box .share_bottom {
+          width: 100%;
+          height: 30px;
+          background-color: rgb(246,246,246);
+          
+        }
+        .share_box .share_bottom a{
+            float: right;
+        }
+
+   /* 分享结束/
+
+   /*分享到 开始*/
+     
+        .bdsharebuttonbox_box{
+          width: 285px;
+          height: 37px;
+          background-color: #000;
+          opacity: 0.7;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          display: none;
+        }
+        /*.bdsharebuttonbox_box:*/
+        .bdsharebuttonbox_box .bdsharebuttonbox{
+            width: 140px;
+            height: 37px;
+            position: relative;
+            top: 5px;
+            left:145px;  
+        }
+        .bdsharebuttonbox_box .fx_box{
+            height: 37px;
+            color: white;
+            position: relative;
+            top: -23px;
+            left:-55px;  
+        }
+        /*分享到 结束*/
+
