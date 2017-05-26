@@ -85,41 +85,6 @@
     </ul>
     </header>
     <!-- ===========================头部结束========================= -->
-
-    <!-- 分享 -->
-        <div class="share">
-          <div class="share_box">
-            <div class="share_top">
-                <p>&nbsp;&nbsp;分享到</p>
-            </div>
-            <div class="bdsharebuttonbox share_center">
-              <div class="share_platform">
-              <a class="bds_mshare" data-cmd="mshare">一键分享</a>
-              <a class="bds_qzone" data-cmd="qzone">QQ空间</a>
-              <a class="bds_tsina" data-cmd="tsina">新浪微博</a>
-                <a class="bds_bdysc" data-cmd="bdysc">百度云收藏</a>
-                <a class="bds_weixin" data-cmd="weixin">微信</a>
-              <a class="bds_renren" data-cmd="renren">人人网</a>
-              <a class="bds_tqq" data-cmd="tqq">腾讯微博</a>
-              <a class="bds_bdxc" data-cmd="bdxc">百度相册</a>
-              <a class="bds_kaixin001" data-cmd="kaixin001">开心网</a>
-              <a class="bds_tqf" data-cmd="tqf">腾讯朋友</a>
-              <a class="bds_tieba" data-cmd="tieba">百度贴吧</a>
-              <a class="bds_douban" data-cmd="douban">豆瓣网</a>
-              <a class="bds_bdhome" data-cmd="bdhome">百度新首页</a>
-              <a class="bds_sqq" data-cmd="sqq">QQ好友</a>
-              <a class="bds_thx" data-cmd="thx">和讯微博</a>
-              <a class="bds_ibaidu" data-cmd="ibaidu">百度中心</a>
-              </div>
-            </div>
-            <div class="bdsharebuttonbox share_bottom">
-                  <a data-cmd="more">&nbsp;&nbsp;&nbsp;更多...</a>
-            </div>
-          </div>
-          <div class="share_right"><p>分享</p></div>
-        </div>
-<!-- 分享结束 -->
-
 <div class="content">
   <div class="tow_content" id="tow_content_id">
       <div class="chm_tag">
@@ -142,11 +107,12 @@
           <div class="from_div" id="from_div">
             <div class="from_ti">北京网络职业学院网上报名表<span>注：*号内容均为必填内容</span></div>
             <div class="from_text">
-              <form class="form-horizontal">
+        
+             <form  class="form-horizontal" name="chm_del"  method="post" onsubmit="return fun(shet);" id="shet">
                 <div class="form-group">
                   <label for="inputEmail3" class="col-sm-2 control-label juli">*考生号</label>
                   <div class="col-sm-6"> 
-                    <input type="text" class="form-control juli" id="inputEmail3">
+                    <input type="text" class="form-control juli blank" id="inputEmail3">
                     </div>
                    <div class="col-sm-3 juli yanzhan1">
                     <p class="yanzheng yanzheng01">请输入考生号</p>
@@ -154,9 +120,9 @@
                 </div>
                 <div id="xian"></div>
                 <div class="form-group">
-                      <label for="inputtext3" class="col-sm-2 control-label juli">*姓名</label>
+                      <label for="inputtext3" class="col-sm-2 control-label juli ">*姓名</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="inputtext3" >
+                      <input type="text" class="form-control juli blank" id="inputtext3" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
                         <p class="yanzheng yanzheng02">请填写信息！</p>
@@ -203,7 +169,7 @@
                  <div class="form-group">
                       <label for="zhenzhi" class="col-sm-2 control-label juli">*政治面貌</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="zhenzhi" >
+                      <input type="text" class="form-control juli blank" id="zhenzhi" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
                         <p class="yanzheng yanzheng003">请填写信息！</p>
@@ -216,30 +182,30 @@
                           <select id="select_leibie" class="select_style geli">
                             <option value="请选择">请选择</option>
                             <option value="城市应届">城市应届</option>
-                            <option value="d">城市往届</option>
-                            <option value="d">农村应届</option>
-                            <option value="d">农村往届</option>
-                          </select><span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
+                            <option value="城市往届">城市往届</option>
+                            <option value="农村应届">农村应届</option>
+                            <option value="农村往届">农村往届</option>
+                          </select><span class="yanzheng yanzheng04" style="top:-2px;left:10px;">请选择！</span>
                    </div>
                  </div>
                  <div id="xian"></div>
                  <div class="form-group">
                       <label for="ID" class="col-sm-2 control-label juli">*身份证号</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="ID" >
+                      <input type="text" class="form-control juli blank" id="ID" >
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng">请填写信息！</p>
+                        <p class="yanzheng yanzheng05">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
                  <div class="form-group">
                       <label for="xuexiao" class="col-sm-2 control-label juli">*所在(或毕业)学校</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="xuexiao">
+                      <input type="text" class="form-control juli blank" id="xuexiao">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng">请填写信息！</p>
+                        <p class="yanzheng yanzheng004">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -247,17 +213,17 @@
                     <label for="select_biye" class="col-sm-2 control-label juli">*毕业时间</label>
                    <div class="col-sm-5">
                           <select id="select_biye" class="select_style geli">
-                            <option value="d">请选择</option>
-                            <option value="d">2017</option>
-                            <option value="d">2016</option>
-                            <option value="d">2015</option>
-                            <option value="d">2014</option>
-                            <option value="d">2013</option>
-                            <option value="d">2012</option>
-                            <option value="d">2011</option>
-                            <option value="d">2010</option>
+                            <option value="请选择">请选择</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="2010">2010</option>
                           </select>
-                          <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
+                          <span class="yanzheng yanzheng06" style="top:-2px;left:10px;">请选择！</span>
                    </div>
                   
                  </div>
@@ -265,20 +231,20 @@
                  <div class="form-group">
                       <label for="jiating" class="col-sm-2 control-label juli">*家庭住址</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="jiating">
+                      <input type="text" class="form-control juli blank" id="jiating">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng">请填写信息！</p>
+                        <p class="yanzheng yanzheng07">请填写信息！</p>
                      </div>
                 </div>
                  <div id="xian"></div>
                  <div class="form-group">
                       <label for="jiedao" class="col-sm-2 control-label juli">*户口所在街道</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="jiedao">
+                      <input type="text" class="form-control juli blank" id="jiedao">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng">请填写信息！</p>
+                        <p class="yanzheng yanzheng08">请填写信息！</p>
                      </div>
                 </div>
                 <div id="xian"></div>
@@ -292,50 +258,50 @@
                  <div class="form-group">
                       <label for="phone" class="col-sm-2 control-label juli">*手机</label>
                       <div class="col-sm-6">
-                      <input type="text" class="form-control juli" id="phone">
+                      <input type="text" class="form-control juli blank" id="phone">
                      </div>
                      <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng">请填写信息！</p>
+                        <p class="yanzheng yanzheng09">请填写信息！</p>
                      </div>
                 </div>
                <div id="xian"></div>
                <div class="form-group">
                     <label for="tongzhishu" class="col-sm-2 control-label juli">*邮件录取通知书地址</label>
                     <div class="col-sm-6">
-                    <input type="text" class="form-control juli" id="tongzhishu">
+                    <input type="text" class="form-control juli blank" id="tongzhishu">
                    </div>
                    <div class="col-sm-3 juli yanzhan1">
-                      <p class="yanzheng">请填写信息！</p>
+                      <p class="yanzheng yanzheng10">请填写信息！</p>
                    </div>
               </div>
              <div id="xian"></div>
              <div class="form-group">
                   <label for="shoujianren" class="col-sm-2 control-label juli">*收件人</label>
                   <div class="col-sm-6">
-                  <input type="text" class="form-control juli" id="shoujianren">
+                  <input type="text" class="form-control juli blank" id="shoujianren">
                  </div>
                  <div class="col-sm-3 juli yanzhan1">
-                    <p class="yanzheng">请填写信息！</p>
+                    <p class="yanzheng yanzheng11">请填写信息！</p>
                  </div>
             </div>
            <div id="xian"></div>
            <div class="form-group">
                 <label for="lianxidainhua" class="col-sm-2 control-label juli">*联系电话(手机)</label>
                 <div class="col-sm-6">
-                <input type="text" class="form-control juli" id="lianxidainhua">
+                <input type="text" class="form-control juli blank" id="lianxidainhua">
                </div>
                <div class="col-sm-3 juli yanzhan1">
-                  <p class="yanzheng">请填写信息！</p>
+                  <p class="yanzheng yanzheng12">请填写信息！</p>
                </div>
           </div>
             <div id="xian"></div>
            <div class="form-group">
                 <label for="youbian" class="col-sm-2 control-label juli">*邮编</label>
                 <div class="col-sm-6">
-                <input type="text" class="form-control juli" id="youbian">
+                <input type="text" class="form-control juli blank" id="youbian">
                </div>
                <div class="col-sm-3 juli yanzhan1">
-                  <p class="yanzheng">请填写信息！</p>
+                  <p class="yanzheng yanzheng13">请填写信息！</p>
                </div>
           </div>
            <div id="xian"></div>
@@ -371,12 +337,12 @@
                 <label for="frist_zhiyuan" class="col-sm-2 control-label juli ">*第一志愿专业</label>
                 <div class="col-sm-6">
                      <select id="frist_zhiyuan" class="select_style geli " >
-                       <option value="">请选择</option>
-                       <option value="">移动应用开发</option>
-                      <option value="">信息安全与管理</option>
-                      <option value="">广播影视节目制作</option>
+                       <option value="请选择">请选择</option>
+                       <option value="移动应用开发">移动应用开发</option>
+                      <option value="信息安全与管理">信息安全与管理</option>
+                      <option value="广播影视节目制作">广播影视节目制作</option>
                      </select>
-                 <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
+                 <span class="yanzheng yanzheng14" style="top:-2px;left:10px;">请选择！</span>
                </div>
               
             </div>
@@ -385,10 +351,10 @@
                 <label for="tow_zhiyuan" class="col-sm-2 control-label juli">第二志愿专业</label>
                 <div class="col-sm-2">
                      <select id="tow_zhiyuan" class="select_style geli">
-                       <option value="">请选择</option>
-                       <option value="">移动应用开发</option>
-                      <option value="">信息安全与管理</option>
-                      <option value="">广播影视节目制作</option>
+                       <option value="请选择">请选择</option>
+                       <option value="移动应用开发">移动应用开发</option>
+                      <option value="信息安全与管理">信息安全与管理</option>
+                      <option value="广播影视节目制作">广播影视节目制作</option>
                      </select>
                </div>
             </div>
@@ -397,10 +363,10 @@
                 <label for="tree_zhiyuan" class="col-sm-2 control-label juli">第三志愿专业</label>
                 <div class="col-sm-2">
                      <select id="tree_zhiyuan" class="select_style geli">
-                       <option value="">请选择</option>
-                       <option value="">移动应用开发</option>
-                      <option value="">信息安全与管理</option>
-                      <option value="">广播影视节目制作</option>
+                        <option value="请选择">请选择</option>
+                       <option value="移动应用开发">移动应用开发</option>
+                      <option value="信息安全与管理">信息安全与管理</option>
+                      <option value="广播影视节目制作">广播影视节目制作</option>
                      </select>
                </div>
             </div>
@@ -448,6 +414,39 @@
     </div> 
   </div>
 </div>
+ <!-- 分享 -->
+        <div class="share">
+          <div class="share_box">
+            <div class="share_top">
+                <p>&nbsp;&nbsp;分享到</p>
+            </div>
+            <div class="bdsharebuttonbox share_center">
+              <div class="share_platform">
+              <a class="bds_mshare" data-cmd="mshare">一键分享</a>
+              <a class="bds_qzone" data-cmd="qzone">QQ空间</a>
+              <a class="bds_tsina" data-cmd="tsina">新浪微博</a>
+                <a class="bds_bdysc" data-cmd="bdysc">百度云收藏</a>
+                <a class="bds_weixin" data-cmd="weixin">微信</a>
+              <a class="bds_renren" data-cmd="renren">人人网</a>
+              <a class="bds_tqq" data-cmd="tqq">腾讯微博</a>
+              <a class="bds_bdxc" data-cmd="bdxc">百度相册</a>
+              <a class="bds_kaixin001" data-cmd="kaixin001">开心网</a>
+              <a class="bds_tqf" data-cmd="tqf">腾讯朋友</a>
+              <a class="bds_tieba" data-cmd="tieba">百度贴吧</a>
+              <a class="bds_douban" data-cmd="douban">豆瓣网</a>
+              <a class="bds_bdhome" data-cmd="bdhome">百度新首页</a>
+              <a class="bds_sqq" data-cmd="sqq">QQ好友</a>
+              <a class="bds_thx" data-cmd="thx">和讯微博</a>
+              <a class="bds_ibaidu" data-cmd="ibaidu">百度中心</a>
+              </div>
+            </div>
+            <div class="bdsharebuttonbox share_bottom">
+                  <a data-cmd="more">&nbsp;&nbsp;&nbsp;更多...</a>
+            </div>
+          </div>
+          <div class="share_right"><p>分享</p></div>
+        </div>
+<!-- 分享结束 -->
 <!-- ============================底部结束====================== -->
 <footer class="container-fluid">
       <div class="container">
@@ -528,6 +527,7 @@
 <script type="text/javascript" src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/bootstrap-hover-dropdown.min.js" ></script>
 <script type="text/javascript" src="../js/header_footer.js" ></script>
+
 <script type="text/javascript">
   var select_minzu=document.getElementById('select_minzu');
   var minzu=  ["请选择","汉族","蒙古族","回族","藏族","维吾尔族","苗族","彝族","壮族","布依族","朝鲜族","满族","侗族","瑶族","白族","土家族","哈尼族","哈萨克族","傣族","黎族","傈僳族","佤族","畲族","高山族","拉祜族","水族","东乡族","纳西族","景颇族","柯尔克孜族","土族","达斡尔族","仫佬族","羌族","布朗族","撒拉族","毛南族","仡佬族","锡伯族","阿昌族","普米族","塔吉克族","怒族","乌孜别克族","俄罗斯族","鄂温克族","崩龙族","保安族","裕固族","京族","塔塔尔族","独龙族","鄂伦春族","门巴族","珞巴族","基诺族","其他民族"]
@@ -584,14 +584,11 @@
             $(".share").animate({'left':'-230px'},300);
           });   
 
-
-
   // 分享到 开始
 window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-window.onload=function () {
+
    var dianhua=document.getElementById("dianhua");
    var dianhuachlider=document.getElementById("dianhuachlider");
-     console.log(dianhuachlider);  
    dianhua.onmouseover = function () {
     dianhuachlider.style.display= "block";
     dianhua.onmouseout = function () {
@@ -599,11 +596,54 @@ window.onload=function () {
     } 
     
   }
-
-
-}
   
 
  // 分享到 结束 
+</script>
+<script type="text/javascript" src="../js/yanZheng.js"></script>
+<script type="text/javascript">
+  var form=document.getElementsByTagName('form')[0];
+var selects=document.getElementsByTagName('select');
+var blank=document.getElementsByClassName('blank');
+var yanzheng=document.getElementsByClassName('yanzheng');
+var a=true,b=true,c=true;
+   function fun(obj){
+          for(var i=0; i<yanzheng.length;i++){
+              if(yanzheng[i].style.opacity==1){
+                alert("请填写正确信息！");
+                a=false;
+                return false;
+              }else{
+                a=true;
+              }
+            }
+         for(var k=0;k<blank.length;k++){
+          if(blank[k].value==""){
+            alert("请填写完整信息！");
+            b=false;
+            return false;
+          }else{
+            b=true;
+          }
+        } 
+        for(var j=0; j<selects.length-2;j++){
+          if(selects[j].value=="请选择"){
+            alert("请填写正确信息！");
+            c=false;
+            return false;
+          }else{
+            c=true;
+          }
+        }
+        setTimeout(function(){
+          if(a&&b&&c){
+             obj.submit();
+          }else{
+               alert("请填写信息！") 
+          }
+        },10)
+        return false;
+
+    }
 </script>
 </html>
