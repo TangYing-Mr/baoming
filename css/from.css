@@ -226,9 +226,16 @@
    /* 分享开始*/
          .share {
           border: none;
+<<<<<<< HEAD
         position: fixed;
         top: 10.9%;
         left: -230px;
+=======
+          position: fixed;
+          top: 104px;
+          left: -230px;
+          z-index: 99;
+>>>>>>> origin/yh
          }
        .share_box {
         width: 230px;
@@ -301,6 +308,10 @@
           left: 0px;
           display: none;
         }
+<<<<<<< HEAD
+=======
+        /*.bdsharebuttonbox_box:*/
+>>>>>>> origin/yh
         .bdsharebuttonbox_box .bdsharebuttonbox{
             width: 140px;
             height: 37px;
