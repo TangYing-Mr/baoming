@@ -242,5 +242,4 @@ window.onload = function(){
         			}
         	}
      }
-
 }
