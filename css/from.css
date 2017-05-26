@@ -32,11 +32,13 @@
   color: #333;
 }
 .zhinan{
- width: 290px;
- /*height: 256px;*/
+ width: 29%;
  margin-bottom: 10px;
  background-image: url(../img/zhinan.png);
 
+}
+#riqi_id{
+  opacity: 0;
 }
 .zhinan_ti{
   width: 100%;
@@ -57,7 +59,6 @@
 .zhinan_formation li{
   list-style: none;
   width: 100%;
-  /*height: 28px;*/
   line-height: 28px;
 }
 .zhinan_formation li a{
@@ -68,7 +69,7 @@
   margin-bottom: 60px;
 }
 .dianhua{
-  width: 285px;
+  width: 29%;
   height: 211px;
   background: url(../img/enroll03.jpg) no-repeat;
   background-position: center;
@@ -93,8 +94,8 @@
 }
 .from_div{
   float: right;
-  width: 702px;
-   font-size: 14px;
+  width: 70.2%;
+  font-size: 14px;
   background-image: url(../img/major02.jpg);
 }
 .from_ti{
@@ -149,11 +150,6 @@
   height: 90px;
   position: relative;
 }
-.diwei{
-  position: absolute;
-  left: 60px;
-  top: 6px;
-}
 .tijiao{
   background: url(../img/button.png) 0 -235px;
     width: 196px;
@@ -171,11 +167,26 @@
     bottom:20px;
     margin-left: -98px;
 }
+@media screen and (max-width:1037px) {
+      .tow_content{
+        width: 100%;
+      }
+      .yanzhan1{
+        width: 100%;
+        margin-left: 22%;
+      }
+      .control-label{
+         white-space:normal;
+         }
+}
 @media screen and (max-width:655px) {
       #xian{
         display: block;
         width:90%;
       }
+        .control-label{
+         white-space:nowrap;
+         }
       .juli{
         margin-left: 5%;
       }
@@ -192,14 +203,10 @@
       }
       .tow_content{
         width: 100%;
-        height: 3700px;
+        height: 3650px;
       }
       .from_div{
         width: 100%;
-      }
-      .diwei{
-         position: absolute;
-         left: 13px;
       }
     }
 @media screen and (max-width:380px) {
@@ -211,16 +218,9 @@
         width: 90%;
       }
       
-<<<<<<< HEAD
-    }
-=======
     }
 
    /* 分享开始*/
-     * {
-          margin: 0;
-          padding: 0;
-         }
          .share {
           border: none;
         position: fixed;

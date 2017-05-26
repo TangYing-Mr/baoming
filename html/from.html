@@ -187,7 +187,7 @@
                   <div id="xian"></div>
                   <div class="form-group">
                         <label for="bron_day" class="col-sm-2 control-label juli">*出生日期</label>
-                       <div class="col-sm-7">
+                       <div class="col-sm-9">
                               <select id="bron_year" class="select_style geli">
                                 <option value="a">请选择</option>
                               </select>年
@@ -196,7 +196,7 @@
                               </select>月
                               <select id="bron_day" class="select_style">
                                  <option value="c">请选择</option>
-                              </select>日<span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
+                              </select>日<span class="yanzheng" style="top:-2px;left:10px;" id="riqi_id">请选择！</span>
                        </div>
                   </div>
                  <div id="xian"></div>
@@ -212,17 +212,14 @@
                 <div id="xian"></div>
                 <div class="form-group">
                     <label for="select_leibie" class="col-sm-2 control-label juli">*考生类别</label>
-                   <div class="col-sm-2">
+                   <div class="col-sm-5">
                           <select id="select_leibie" class="select_style geli">
                             <option value="d">请选择</option>
                             <option value="d">城市应届</option>
                             <option value="d">城市往届</option>
                             <option value="d">农村应届</option>
                             <option value="d">农村往届</option>
-                          </select>
-                   </div>
-                   <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng" style="top:4px">请选择！</p>
+                          </select><span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                    </div>
                  </div>
                  <div id="xian"></div>
@@ -248,7 +245,7 @@
                 <div id="xian"></div>
                 <div class="form-group">
                     <label for="select_biye" class="col-sm-2 control-label juli">*毕业时间</label>
-                   <div class="col-sm-2">
+                   <div class="col-sm-5">
                           <select id="select_biye" class="select_style geli">
                             <option value="d">请选择</option>
                             <option value="d">2017</option>
@@ -260,10 +257,9 @@
                             <option value="d">2011</option>
                             <option value="d">2010</option>
                           </select>
+                          <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                    </div>
-                   <div class="col-sm-3 juli yanzhan1">
-                        <p class="yanzheng" style="top:4px">请选择！</p>
-                   </div>
+                  
                  </div>
                  <div id="xian"></div>
                  <div class="form-group">
@@ -373,17 +369,16 @@
           <div id="xian"></div>
           <div class="form-group">
                 <label for="frist_zhiyuan" class="col-sm-2 control-label juli ">*第一志愿专业</label>
-                <div class="col-sm-2">
+                <div class="col-sm-6">
                      <select id="frist_zhiyuan" class="select_style geli " >
                        <option value="">请选择</option>
                        <option value="">移动应用开发</option>
                       <option value="">信息安全与管理</option>
                       <option value="">广播影视节目制作</option>
                      </select>
+                 <span class="yanzheng" style="top:-2px;left:10px;">请选择！</span>
                </div>
-               <div class="col-sm-3 juli yanzhan1">
-                    <p class="yanzheng diwei">请选择！</p>
-               </div>
+              
             </div>
           <div id="xian"></div>
           <div class="form-group">
@@ -417,7 +412,7 @@
                         <input type="radio" name="tongyi" id="tongyi1" value="option2" checked="checked"> 是
                       </label>
                       <label class="radio-inline">
-                        <input type="radio" name="inlineRadioOptions" id="tongyi2" value="option3"> 否
+                        <input type="radio" name="tongyi" id="tongyi2" value="option3"> 否
                       </label> 
                  </div>
             </div>
@@ -562,25 +557,31 @@
         option3.innerHTML=i;
         option3.value=i;
         bron_day.appendChild(option3);
-<<<<<<< HEAD
-  } 
-=======
+    } 
+    var riqi_id=document.getElementById('riqi_id');
+    bron_year.onclick=function(){
+          bron_year.onmouseout=function(){
+            if(bron_year.value!="a"){
+                bron_month.value=1;
+                bron_day.value=1;
+                riqi_id.style.opacity=0;
+              }else{
+                bron_month.value="b";
+                bron_day.value="c";
+                riqi_id.style.opacity=1;
+              }
+          }
   }
+ 
   var tow_content_id=document.getElementById('tow_content_id');
   var from_div=document.getElementById('from_div');
-  console.log(from_div)
-  window.onresize=function  () {
-    if(window.innerWidth<=655){
-      var height=from_div.clientHeight;
-      console.log(height)
-      // tow_content_id.style.height=window.innerWidth+"px";
-      
-    }else{
-    // tow_content_id.style.width="1000px";
-    // from_div.style.width="702px";
-    }
-    // console.log(tow_content_id.style.width)
-  }
+  setInterval(function(){
+                    if(655<window.innerWidth<=1037){
+                      var height=from_div.clientHeight;
+                      tow_content_id.style.height=from_div.clientHeight+50+"px"; 
+                    }
+                    },30)
+    
   
   // 分享开始
         window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
@@ -592,9 +593,9 @@
           });   
 
   // 分享结束
-<<<<<<< HEAD
->>>>>>> origin/master
-=======
+// <<<<<<< HEAD
+// >>>>>>> origin/master
+// =======
 
   // 分享到 开始
 window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
@@ -615,6 +616,6 @@ window.onload=function () {
   
 
  // 分享到 结束 
->>>>>>> origin/master
+// >>>>>>> origin/master
 </script>
 </html>
