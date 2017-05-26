@@ -223,9 +223,10 @@
    /* 分享开始*/
          .share {
           border: none;
-        position: fixed;
-        top: 10.9%;
-        left: -230px;
+          position: fixed;
+          top: 104px;
+          left: -230px;
+          z-index: 99;
          }
        .share_box {
         width: 230px;
@@ -270,7 +271,7 @@
         }
         .share_box .share_center .share_platform a {
           display: inline-block;
-          width: 74px;
+          width: 90px;
           height: 21px;
           line-height: 21px;
           text-indent: 10px;
